@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->to('/weather');
 });
+
+Route::get('/weather', 'WeatherController@weather')->name('weather');
+Route::get('/orders', 'OrderController@orders')->name('orders');

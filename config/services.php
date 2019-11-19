@@ -35,4 +35,15 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'weather' => [
+        'current' => 'yandex',
+        'yandex' => [
+            'key' => env('YANDEX_WEATHER_KEY'),
+            'url' => env('YANDEX_WEATHER_URL', 'https://api.weather.yandex.ru/v1/forecast'),
+            'limit' => env('YANDEX_WEATHER_LIMIT', 1),
+            'hours' => env('YANDEX_WEATHER_HOURS', 'false'),
+            'extra' => env('YANDEX_WEATHER_EXTRA', 'false'),
+        ],
+    ],
+
 ];
