@@ -35,6 +35,8 @@
                                 <tr><p>No data</p></tr>
                             @endforelse
                         </table>
+
+                        {{ $orders->links() }}
                     </div>
                 </div>
             </div>
